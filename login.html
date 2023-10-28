@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        {% include 'cdnlines.html' %}
+        <style>
+            h3{
+            font-style: bold;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            }
+        </style>
+    </head>
+    
+    <body>
+    <center> <br>
+        <h3>WELCOME TO KITTIES</h3>
+        <img src="static/images/logo2.jpg"><br>
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset>
+                <table>
+                    <tr>
+                    <td>
+                    <label><b>UserName</b></label>
+                    <input type="text"name="Uname"class="form-control"placeholder="UserName"><br>
+                    </td>
+                    </tr>
+                    <tr><td>
+                    <label><b>Password</b></label>
+                    <input type="password"name="password"class="form-control"placeholder="Password">
+                    </td>
+                    </tr>
+                </table>
+                <a href="#">Forgot Password?</a><br><br>
+                <input type="button" class="btn btn-primary" name="Login" id="Login" value="Login">
+            </fieldset>
+        </form>
+        <br><br>
+        <h4>New user<a href="signup"> signup</a></h4>
+    </div>
+    </div>
+    </center>
+</body>
+</html>

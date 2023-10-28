@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+
+        <title></title>
+    <style>
+        .container-fluid
+        {
+            background-color: white;
+            background-size: 100%;
+        }
+        h4{
+           color: black; 
+        }
+        div{
+            font-size: small;
+        }
+    </style>
+        {% include 'cdnlines.html' %}
+    </head>
+    <body>
+    {% include 'nav.html' %}
+{% block content %}
+<img src="static/images/bgimage11.jpg" style="height:100%,width:100%">
+{% endblock %}
+<br>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <center>
+            <img src="static/images/logo1.jpg" style="height:100%,width:100%">
+        </center>
+        <hr>
+        <div class="col-md-5">
+        <h5><b>ABOUT US</b></h5><h5><p>Ketties is an online retailer and web service provider. The company provides<br> pet products such as clothes, toys and all the gromming products including shampoos, nailclippers, cleaning wipes, deshedding brushes at one place.</p></h5>
+        </div>
+        <div class="col-md-3">
+            <h5><b>SHOP FOR</b></h5>
+            Clothes<br>
+            Toys<br>
+            shampoo<br>
+            Wipes<br>
+            Nail Clippers<br>
+            Flea Combs<br>
+            Deshedding Brushes<br>
+        </div>
+        <div class="col-md-2">
+            <h5><b>CUSTOMER POLICIES</b></h5>
+            FAQ<br>
+            T&C<br>
+            Terms Of Use<br>
+            Track orders<br>
+            Shipping<br>
+            Cancellation<br>
+            Returns<br>
+            Privacy Policy<br>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <h5><b>CONTACT US</b></h5><h4><i><a href="mailto:kittens@gmail.com">kittens@gmail.com</a></i></h4>
+            </div>
+            <div class="col-md-3">
+                <h5><b>KEEP IN TOUCH</b></h5>
+                <img src="static/images/logos.jpg">
+            </div>
+            <div class="col-md-2">
+                <h5><b>GET THE APP</b></h5>
+                <img src="static/images/applogo1.jpg">
+                <img src="static/images/applogo2.jpg">
+            </div>
+    </div>
+</div>
+</div>
+    </body>
+</html>
